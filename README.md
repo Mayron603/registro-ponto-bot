@@ -40,6 +40,12 @@ GUILD_ID=
 MONGODB_URI=sua_conexao_mongodb
 ```
 
+## 🌐 Acessando o Painel de Controle
+Após executar o bot, o painel web administrativo pode ser acessado via o link:
+```
+http://localhost:3000/
+```
+
 ## 🚀 Como Executar
 
 | Comando         | Descrição                         |
