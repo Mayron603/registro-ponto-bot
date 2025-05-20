@@ -1,7 +1,5 @@
 # 🚔 BatePontoBot - Sistema de Registro Policial
 
-![Banner]()
-
 > Bot de Discord para controle de plantões com integração web
 
 ## 📌 Funcionalidades
