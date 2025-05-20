@@ -21,7 +21,7 @@
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/Mayron603/registro-ponto-bot.git
+git clone https://github.com/Mayron603/registro-ponto-bot-discord.git
 cd BatePontoBot-Discord
 ```
 
