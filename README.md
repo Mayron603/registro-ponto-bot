@@ -25,12 +25,19 @@ git clone https://github.com/Mayron603/registro-ponto-bot.git
 cd BatePontoBot-Discord
 ```
 
-2. Instale as dependências:
+2. Registrar os Slash Commands
+Antes de iniciar o bot, execute:
+
+```bash 
+node deploy-commands.js
+```
+
+3. Instale as dependências:
 ```bash
 npm install
 ```
 
-3. Configure suas variáveis de ambiente criando um arquivo `.env` com o conteúdo:
+4. Configure suas variáveis de ambiente criando um arquivo `.env` com o conteúdo:
 ```
 TOKEN=seu_token_do_bot
 CLIENT_ID=
