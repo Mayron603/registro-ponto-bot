@@ -9,8 +9,7 @@
 - ✅ Registro de entrada/saída via botões  
 - 📊 Painel de agentes em serviço em tempo real  
 - 📈 Relatório completo de horas trabalhadas  
-- 🔒 Prevenção contra registros duplicados  
-- 🌐 Painel web administrativo (opcional)  
+- 🌐 Painel web administrativo (desenvolvimento)  
 
 ## 🛠 Tecnologias
 
@@ -19,14 +18,12 @@
 - **Frontend**: (opcional)  
 - **Bibliotecas**:  
   - Discord.js  
-  - Mongoose  
-  - Moment.js  
 
 ## ⚙️ Instalação
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/BatePontoBot-Discord.git
+git clone https://github.com/Mayron603/registro-ponto-bot.git
 cd BatePontoBot-Discord
 ```
 
@@ -38,17 +35,15 @@ npm install
 3. Configure suas variáveis de ambiente criando um arquivo `.env` com o conteúdo:
 ```
 TOKEN=seu_token_do_bot
+CLIENT_ID=
+GUILD_ID=
 MONGODB_URI=sua_conexao_mongodb
-PORT=3000
 ```
 
 ## 🚀 Como Executar
 
 | Comando         | Descrição                         |
 |-----------------|----------------------------------|
-| `npm start`     | Inicia apenas o bot Discord       |
-| `npm run api`   | Inicia a API de dados             |
-| `npm run client`| Inicia o painel web (opcional)    |
 | `npm run dev`   | Modo desenvolvimento (tudo junto) |
 
 ## 📋 Comandos Principais
@@ -63,23 +58,31 @@ PORT=3000
 ### Painel Discord  
 Painel de controle no Discord
 
-### Web Dashboard  
-Painel web administrativo
-
 ## 📝 Estrutura de Arquivos
 
 ```
 📦 BatePontoBot-Discord
 ├── 📂 commands
-│   ├── painelpolicia.js
-│   └── horas.js
+│   ├── apagar.js
+│   ├── horas.js
+│   ├── painel.js
+│   ├── relatorio_excel.js
 ├── 📂 models
 │   └── Registro.js
-├── 📂 web (opcional)
-│   └── painel-react
-├── 📜 registroponto.js
+├── 📂 public
+│   └── index.html
+├── 📂 relatorios
+├── 📂 utils
+│   └── logger.js
+├── 📜 .env
 ├── 📜 api.js
-└── 📜 index.js
+├── 📜 database.js
+├── 📜 deploy-commands.js
+├── 📜 index.js
+├── 📜 package-lock.json
+├── 📜 package.json
+└── 📜 registroponto.js
+
 ```
 
 ## 🤝 Contribuição
